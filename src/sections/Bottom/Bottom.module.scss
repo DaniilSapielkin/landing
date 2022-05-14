@@ -1,0 +1,116 @@
+.root {
+  width: 100%;
+  background: #fd9b28;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  width: 100%;
+  max-width: 1110px;
+  min-height: 85px;
+  margin: 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconSocials {
+  display: flex;
+}
+
+.bntGetDemo {
+  width: 20%;
+  max-width: 170px;
+  min-width: 127px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 16px 0px;
+  border-radius: 30px;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid white;
+    color: #fd9b28;
+    background-color: white;
+  }
+}
+
+.infoBottom {
+  display: flex;
+  align-items: center;
+}
+
+.infoContact {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  flex-wrap: wrap;
+
+  .numbers {
+    display: flex;
+  }
+
+  div {
+    font-size: 14px;
+    margin: 0 7px;
+  }
+}
+
+.iconLinked,
+.iconFacebook,
+.iconInstagram {
+  color: #000;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.iconLinked {
+  &:hover {
+    color: #0b65c2;
+  }
+}
+
+.iconFacebook {
+  &:hover {
+    color: #1977f2;
+  }
+}
+.iconInstagram {
+  &:hover {
+    color: #f6004a;
+  }
+}
+
+@media (max-width: 1060px) {
+  .infoContact {
+    margin: 0;
+
+    .numbers {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  }
+
+  .email {
+    margin-left: 20px;
+    .emailTitle {
+      margin-left: 14px;
+    }
+  }
+
+  .infoBottom {
+    flex-direction: column;
+  }
+
+  .humburgerMenu {
+    display: block;
+    color: #fff;
+  }
+}

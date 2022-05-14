@@ -1,0 +1,30 @@
+.root {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.description {
+  max-width: 805px;
+}
+
+.bntAccept {
+  width: 20%;
+  max-width: 170px;
+  min-width: 127px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 16px 0px;
+  border-radius: 30px;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid white;
+    color: #fd9b28;
+    background-color: white;
+  }
+}

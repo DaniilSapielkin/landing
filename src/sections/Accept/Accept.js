@@ -6,6 +6,10 @@ export const Accept = () => {
   return (
     <div className={classes.root}>
       <div className={classes.wrapper}>
+        <div className={classes.infoHeaderMini}>
+          MeGaHub CRM system as the key solution <br /> to the business success
+        </div>
+
         <div className={classes.backgroundFirst}>
           <IconMain />
         </div>

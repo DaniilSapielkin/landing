@@ -24,15 +24,37 @@ export const Bottom = () => {
         <div className={classes.contacts}>
           <div className={classes.infoBottom}>
             <div className={classes.infoContact}>
-              <IconPhone />
+              <div className={classes.iconEmail}>
+                <IconPhone />
+              </div>
               <div className={classes.numbers}>
-                <div> +380 (66) 026-28-38</div>
+                <div className={classes.smallIcon}>
+                  <div className={classes.iconPhoneMini}>
+                    <IconPhone />
+                  </div>
+                  <div>+380 (66) 026-28-38</div>
+                </div>
+
                 <div>+44 (20) 3807 7556</div>
               </div>
             </div>
+
             <div className={cn(classes.infoContact, classes.email)}>
-              <IconMail />
-              <div className={classes.emailTitle}>info@megadevllc.com</div>
+              <div className={classes.iconEmail}>
+                <IconMail />
+              </div>
+              <div className={classes.emailTitle}>
+                <div className={classes.iconPhoneMini}>
+                  <IconMail />
+                </div>
+                <div>info@megadevllc.com</div>
+              </div>
+
+              <div className={classes.iconSocialsMini}>
+                <IconLinked className={classes.iconLinked} />
+                <IconFacebook className={classes.iconFacebook} />
+                <IconInstagram className={classes.iconInstagram} />
+              </div>
             </div>
           </div>
         </div>

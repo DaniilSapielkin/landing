@@ -29,3 +29,9 @@
   font-weight: 700;
   font-size: 30px;
 }
+
+@media (max-width: 744px) {
+  .header_section {
+    font-size: 20px;
+  }
+}

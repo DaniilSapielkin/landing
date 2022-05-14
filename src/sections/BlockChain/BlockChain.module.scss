@@ -9,8 +9,22 @@
   font-weight: bold;
 }
 
-// .blocksInfo {
-// }
+.wrapperTabs {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  .tabsBlock {
+    overflow-x: scroll;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2.5rem;
+    padding-bottom: 20px;
+  }
+}
 
 .block {
   display: flex;

@@ -12,11 +12,9 @@
   align-items: center;
   flex-direction: column;
   max-width: 1066px;
-  //   min-height: 514px;
   height: 380px;
   padding: 65px 20px;
   margin: 0 38px;
-
   background: linear-gradient(
     285.58deg,
     rgba(253, 155, 40, 0.19) 17.12%,
@@ -213,6 +211,14 @@
   &:hover {
     .react-tel-input .selected-flag .inputBackground {
       background-color: white;
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .body {
+    .header {
+      font-size: 20px;
     }
   }
 }

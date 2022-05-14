@@ -1,4 +1,8 @@
 import classes from "./StandsOut.module.scss";
+
+// import { ReactComponent as Notebook } from "../../assets/icons/notebook.svg";
+// import { ReactComponent as IconCrmMini } from "../../assets/icons/iconIphoneNotebook.svg";
+import IconNotebook from "../../assets/icons/iconNotebook.png";
 import IconCrm from "../../assets/images/crm3.png";
 
 export const StandsOut = () => {
@@ -7,6 +11,15 @@ export const StandsOut = () => {
       <div className={classes.infoBody}>
         <div className={classes.infoBodyWrapper}>
           <div className={classes.infoHeader}>Why MeGaHub Stands Out?</div>
+
+          <div className={classes.iconMini}>
+            {/* <IconCrmMini /> */}
+            {/* <div className={classes.iconNotebook}>
+              <Notebook />
+            </div> */}
+            <img src={IconNotebook} alt="..." />
+          </div>
+
           <div className={classes.infoDescription}>
             <div>
               Wide-functional and the variety of business modules, integrated

@@ -20,40 +20,49 @@ export const BlockChain = () => {
 
   return (
     <div className={classes.root}>
-      <div className={classes.header}>Blockchain integrations</div>
+      <div className={cn(classes.header, "header_section")}>
+        Blockchain integrations
+      </div>
 
       <div>
         <div className={classes.blocksInfo}>
-          <Slider {...settingsSlider}>
-            {blocksInfo.map((block) => (
-              <div key={block.title} className={classes.block}>
-                <div className={classes.titleBlock}>
-                  <div className={classes.icon}>{block.icon}</div>
-                  <div className={classes.header}>{block.title}</div>
-                </div>
-
-                <div
-                  className={cn(classes.description, {
-                    [classes.isReadMore]: isReadMore === block.title,
-                  })}
-                >
-                  {block.description}
-                </div>
-
-                {block.link && (
-                  <div
-                    className={classes.readMore}
-                    onClick={() => handleSetMore(block.title)}
-                  >
-                    {isReadMore && isReadMore === block.title
-                      ? "Close"
-                      : "Read more"}
-                    <IconArrow />
+          {/* <Slider {...settingsSlider}> */}
+          <div className={classes.wrapperTabs}>
+            <div className={classes.tabsBlock}>
+              {blocksInfo.map((block) => (
+                <div key={block.title} className={classes.block}>
+                  <div className={classes.titleBlock}>
+                    <div className={classes.icon}>{block.icon}</div>
+                    <div className={classes.header}>{block.title}</div>
                   </div>
-                )}
-              </div>
-            ))}
-          </Slider>
+
+                  <div>
+                    <div
+                      className={cn(classes.description, {
+                        [classes.isReadMore]: isReadMore === block.title,
+                      })}
+                    >
+                      {block.description}
+                    </div>
+                  </div>
+
+                  {block.link && (
+                    <div
+                      className={classes.readMore}
+                      onClick={() => handleSetMore(block.title)}
+                    >
+                      {isReadMore && isReadMore === block.title
+                        ? "Close"
+                        : "Read more"}
+                      <IconArrow />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* </Slider> */}
         </div>
       </div>
     </div>

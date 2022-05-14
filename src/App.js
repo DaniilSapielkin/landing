@@ -12,6 +12,7 @@ import { FormStart } from "./sections/FormStart/FormStart";
 import { Bottom } from "./sections/Bottom/Bottom";
 import FormField from "./components/Modal";
 
+import "./assets/swiper.scss";
 import "./App.css";
 
 export const Context = React.createContext();

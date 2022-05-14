@@ -87,6 +87,18 @@
   }
 }
 
+.iconSocialsMini {
+  display: none;
+}
+
+.smallIcon {
+  display: flex;
+}
+
+.iconPhoneMini {
+  display: none;
+}
+
 @media (max-width: 1060px) {
   .infoContact {
     margin: 0;
@@ -112,5 +124,72 @@
   .humburgerMenu {
     display: block;
     color: #fff;
+  }
+}
+
+@media (max-width: 656px) {
+  .body {
+    flex-direction: column;
+    margin: 0;
+    padding: 23px;
+  }
+  .contacts {
+    width: 100%;
+  }
+
+  .emailTitle {
+    display: flex;
+  }
+
+  .iconEmail {
+    display: none;
+  }
+
+  .email {
+    margin-left: 0px;
+    .emailTitle {
+      margin: 0;
+    }
+  }
+
+  .iconSocials {
+    display: none;
+  }
+
+  .iconSocialsMini {
+    display: flex;
+  }
+
+  .infoContact {
+    margin: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    div {
+      margin: 0;
+    }
+
+    .numbers {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+  }
+
+  .bntGetDemo {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .iconPhoneMini {
+    display: block;
+    margin-right: 14px !important;
+  }
+
+  .infoBottom {
+    max-width: 360px;
+    margin: 0 auto;
   }
 }

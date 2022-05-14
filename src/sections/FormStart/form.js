@@ -33,7 +33,7 @@ export default function FormField() {
     },
   });
 
-  const { errors, touched, values, handleChange, handleSubmit } = formik;
+  const { errors, values, handleChange, handleSubmit } = formik;
 
   const errorName = formik.touched.name && Boolean(formik.errors.name);
   const errorEmail = formik.touched.email && Boolean(formik.errors.email);

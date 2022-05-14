@@ -54,3 +54,9 @@
     height: 100%;
   }
 }
+
+@media (max-width: 744px) {
+  .header {
+    font-size: 20px;
+  }
+}

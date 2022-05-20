@@ -3,7 +3,7 @@ import Hamburger from "hamburger-react";
 
 import { ReactComponent as MainBackground } from "../../assets/images/mainFon.svg";
 import { ReactComponent as MainImage } from "../../assets/images/1.1.svg";
-import { ReactComponent as IconMain } from "../../assets/icons/mainIcon.svg";
+import { ReactComponent as IconMain } from "../../assets/icons/iconMain.svg";
 import { ReactComponent as IconMail } from "../../assets/icons/mail.svg";
 import { ReactComponent as IconPhone } from "../../assets/icons/phone.svg";
 import { ReactComponent as IconMainMini } from "../../assets/icons/iconPhoneMain.svg";

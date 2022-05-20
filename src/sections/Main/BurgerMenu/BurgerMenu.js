@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../../../App";
 
-import { ReactComponent as IconMain } from "../../../assets/icons/iconBurger.svg";
+import { ReactComponent as IconBurger } from "../../../assets/icons/iconBurger.svg";
 import { ReactComponent as IconEmail } from "../../../assets/icons/mail.svg";
 import { ReactComponent as IconPhone } from "../../../assets/icons/phone.svg";
 import classes from "./BurgerMenu.module.scss";
@@ -13,7 +13,7 @@ export const BurgerMenu = () => {
     <div className={classes.root}>
       <div className={classes.body}>
         <div className={classes.iconMain}>
-          <IconMain />
+          <IconBurger />
         </div>
 
         <div className={classes.itemInfo}>

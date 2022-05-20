@@ -4,6 +4,12 @@
   filter: drop-shadow(0px -5px 34px #e44e1b);
 }
 
+@media (max-width: 440px) {
+  .root {
+    width: unset;
+  }
+}
+
 .body {
   background: #fd9b28;
   padding: 22px 10px 18px;

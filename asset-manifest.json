@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.31442272.css",
-    "main.js": "/landing/static/js/main.985c34d9.js",
+    "main.css": "/landing/static/css/main.8b74b630.css",
+    "main.js": "/landing/static/js/main.1f2f5ec1.js",
     "static/js/787.28525a86.chunk.js": "/landing/static/js/787.28525a86.chunk.js",
     "static/media/crm3.png": "/landing/static/media/crm3.f4cbe19e6cc2c41e660c.png",
     "static/media/1.1.svg": "/landing/static/media/1.1.3fad5cadd6c803fd830308d052c557f1.svg",
@@ -20,8 +20,8 @@
     "static/media/transperant.svg": "/landing/static/media/transperant.4b4d8c2f00c2500fd8858eebeb02ae88.svg",
     "static/media/unstableWorkflow.svg": "/landing/static/media/unstableWorkflow.c4fe22fc0503480d69f230d9df308452.svg",
     "static/media/humanResorce.svg": "/landing/static/media/humanResorce.649fc692b8c4c78adefbb185ef10736f.svg",
+    "static/media/iconMain.svg": "/landing/static/media/iconMain.a50b892a702e2eaa2c261c195a120c52.svg",
     "static/media/bottomIcon.svg": "/landing/static/media/bottomIcon.88edf122267811f875b4205af395240d.svg",
-    "static/media/mainIcon.svg": "/landing/static/media/mainIcon.0f5fafa34c0e7648098621c60c27bbc1.svg",
     "static/media/iconBurger.svg": "/landing/static/media/iconBurger.d9528d7e8a7143ade38e5ce22862ae81.svg",
     "static/media/blockchainDecentr.svg": "/landing/static/media/blockchainDecentr.ed4e7b1a39dc1b9f609da161ef62f368.svg",
     "static/media/decentralizedIcon.svg": "/landing/static/media/decentralizedIcon.5508640285a6602408e8baaf6f2d0e3b.svg",
@@ -46,12 +46,12 @@
     "static/media/linkedin.svg": "/landing/static/media/linkedin.f6e4f6cc22a14324fa0b49eda58935ed.svg",
     "static/media/mail.svg": "/landing/static/media/mail.c9d29b5281994245eaed65998bce7cf7.svg",
     "static/media/facebook.svg": "/landing/static/media/facebook.791b508a1fd9b78a00d50f48b1296868.svg",
-    "main.31442272.css.map": "/landing/static/css/main.31442272.css.map",
-    "main.985c34d9.js.map": "/landing/static/js/main.985c34d9.js.map",
+    "main.8b74b630.css.map": "/landing/static/css/main.8b74b630.css.map",
+    "main.1f2f5ec1.js.map": "/landing/static/js/main.1f2f5ec1.js.map",
     "787.28525a86.chunk.js.map": "/landing/static/js/787.28525a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31442272.css",
-    "static/js/main.985c34d9.js"
+    "static/css/main.8b74b630.css",
+    "static/js/main.1f2f5ec1.js"
   ]
 }

@@ -62,6 +62,9 @@
 }
 
 @media (max-width: 420px) {
+  .root {
+    padding-top: 45px;
+  }
   .description {
     padding: 0 10px;
   }

@@ -222,3 +222,15 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .inputBox {
+    input {
+      width: 240px;
+    }
+  }
+  .body {
+    padding: 55px 10px;
+    margin: 0 40px;
+  }
+}

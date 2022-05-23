@@ -123,8 +123,6 @@
   z-index: 6;
 
   .menuIcon {
-    // width: 41px;
-    // height: 41px;
     z-index: 9;
     border-radius: 50%;
     border: 2px solid black;
@@ -245,6 +243,17 @@
     width: 124%;
     height: 91vh;
   }
+
+  .menuBody {
+    right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .humburgerMenu {
+    right: 8px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -260,9 +269,6 @@
 
   .backgMainMini {
     display: block;
-  }
-  .humburgerMenu {
-    right: 8px;
   }
 
   .menuBody {

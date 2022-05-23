@@ -159,6 +159,12 @@
 
 @media (max-width: 626px) {
   .bodyInfoTab {
-    height: 537px;
+    max-height: 537px;
+  }
+}
+
+@media (max-width: 626px) {
+  .header {
+    padding: 0 10px;
   }
 }

@@ -74,5 +74,14 @@
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-@media (max-width: 400) {
+@media (max-width: 640px) {
+  .root {
+    width: 100%;
+  }
+  .body {
+    max-width: initial;
+  }
+  .menuBody {
+    padding-right: 5px;
+  }
 }

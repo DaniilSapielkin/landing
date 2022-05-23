@@ -51,9 +51,15 @@ export const Bottom = () => {
               </div>
 
               <div className={classes.iconSocialsMini}>
-                <IconLinked className={classes.iconLinked} />
-                <IconFacebook className={classes.iconFacebook} />
-                <IconInstagram className={classes.iconInstagram} />
+                <a href="https://linkedin.com" target="_blank">
+                  <IconLinked className={classes.iconLinked} />
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                  <IconFacebook className={classes.iconFacebook} />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                  <IconInstagram className={classes.iconInstagram} />
+                </a>
               </div>
             </div>
           </div>

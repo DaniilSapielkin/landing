@@ -10,6 +10,7 @@ import classes from "./FormStart.module.scss";
 
 export default function FormField() {
   const [checkBox, setCheckBox] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const schema = Yup.object().shape({
     email: Yup.string()
@@ -25,17 +26,22 @@ export default function FormField() {
       name: "",
       email: "",
       promocode: "",
-      phone: "",
+      phone: phoneNumber,
       checkbox: false,
     },
     validationSchema: schema,
     onSubmit: (values) => {
       // alert(JSON.stringify(values, null, 2));
-      console.log(values);
+      console.log({ ...values, phone: phoneNumber });
     },
   });
 
   const { errors, values, handleChange, handleSubmit } = formik;
+
+  const handlePhone = (number) => {
+    console.log(typeof number);
+    formik.handleChange("phone", number);
+  };
 
   const errorName = formik.touched.name && Boolean(formik.errors.name);
   const errorEmail = formik.touched.email && Boolean(formik.errors.email);
@@ -83,8 +89,11 @@ export default function FormField() {
           name="phone"
           country={"us"}
           placeholder="Phone number*"
-          // onChange={handleChange}
-          onChange={(phone) => formik.handleChange(phone)}
+          // onChange={handlePhone}
+          onChange={(phone) => {
+            console.log(phone);
+            setPhoneNumber(phone);
+          }}
         />
       </div>
 

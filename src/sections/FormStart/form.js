@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useFormik } from "formik";
+import { useFormik, Field } from "formik";
 import * as Yup from "yup";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -16,7 +16,8 @@ export default function FormField() {
       .email("Email must be a valid email address")
       .required("Email is required"),
     name: Yup.string().required("Name is required"),
-    checkbox: Yup.boolean().oneOf([true]),
+
+    checkbox: Yup.boolean().oneOf([true], "Must Accept Terms and Conditions"),
   });
 
   const formik = useFormik({
@@ -28,9 +29,9 @@ export default function FormField() {
       checkbox: false,
     },
     validationSchema: schema,
-    onSubmit: values => {
+    onSubmit: (values) => {
       // alert(JSON.stringify(values, null, 2));
-      console.log(values)
+      console.log(values);
     },
   });
 
@@ -41,6 +42,7 @@ export default function FormField() {
   const errorCheckBox =
     formik.touched.checkbox && Boolean(formik.errors.checkbox);
   const errorPhone = formik.touched.phone && Boolean(formik.errors.phone);
+  console.log(errors);
 
   return (
     <form onSubmit={handleSubmit}>
@@ -81,7 +83,8 @@ export default function FormField() {
           name="phone"
           country={"us"}
           placeholder="Phone number*"
-          onChange={handleChange}
+          // onChange={handleChange}
+          onChange={(phone) => formik.handleChange(phone)}
         />
       </div>
 
@@ -105,8 +108,9 @@ export default function FormField() {
           >
             <input
               type="checkbox"
-              checked={checkBox}
-              onChange={(e) => setCheckBox(!checkBox)}
+              name="checkbox"
+              checked={values.checkbox}
+              onChange={handleChange}
             />
             <span />
           </label>

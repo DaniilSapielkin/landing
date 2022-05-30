@@ -28,8 +28,9 @@ export default function FormField() {
       checkbox: false,
     },
     validationSchema: schema,
-    onSubmit: (values) => {
-      alert(JSON.stringify(values));
+    onSubmit: values => {
+      // alert(JSON.stringify(values, null, 2));
+      console.log(values)
     },
   });
 
@@ -65,8 +66,8 @@ export default function FormField() {
           name="email"
           type="email"
           placeholder="Email*"
-          value={values.email}
-          onChange={handleChange}
+          value={formik.values.email}
+          onChange={formik.handleChange}
         />
 
         {errorName && <div className={classes.error}>{errors.email}</div>}
